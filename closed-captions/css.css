@@ -54,7 +54,7 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0s .7s;
 	margin-right: -.25em;
-	font-weight: 800;
+	font-weight: 1000;
 }
 .p0.on span:nth-of-type(5) {
 	opacity: 1;
