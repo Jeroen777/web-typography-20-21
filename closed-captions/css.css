@@ -1,5 +1,5 @@
 body {
-	background-color: 	#202020;
+	background-color: #202020;
 }
 
 body p {
@@ -15,14 +15,18 @@ body p {
 	display: block;
 
 	display: flex;
-  justify-content: center;
+	justify-content: center;
+
+	width: 700px;
+	height: 500px;
 }
 
 #closed-captions {
-	margin-top: 1em;
+	margin-top: 2em;
 	display: flex;
 	justify-content: center;
-  }
+}
+
 /* **********************************************
 Basic mechanics
 Hide all paragraphs by default
@@ -35,27 +39,32 @@ Feel free to adjust the defaults to your needs.
 	transition: .05s;
 	position: absolute;
 }
+
 #closed-captions .on {
 	opacity: 1;
 }
+
 #closed-captions .off {
 	transition: .2s;
 	opacity: 0;
 }
+
 .voice1 {
 	font-style: italic;
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 .voice2 {
 	font-family: brenner;
-	font-size: 2em;
-	
+	font-size: 1.8em;
+
 }
 
-.voice3{
+.voice3 {
 	justify-content: ;
 }
+
+#
 
 /* **********************************************
 The first paragraph, with extended timing for 
@@ -67,188 +76,103 @@ You probably want to change the styling.
 ********************************************** */
 .p0.on span {
 	font-family: brenner;
-	
+
 }
 
 .p1.on span {
-  font-size: 2em;
+	font-size: 2em;
 }
 
 .p1 span:first-of-type {
 	color: green;
 }
 
-.p1.on span:nth-of-type(1) {
+.p1.on span:nth-of-type(1) {}
 
-}
+.p3 span {}
 
-.p3 span {
+.p4 span {}
 
-}
+.p5 span {}
 
-.p4 span {
-	
-}
+.p6 span {}
 
-.p5 span {
-	
-}
+.p7 span {}
 
-.p6 span {
-	
-}
+.p8 span {}
 
-.p7 span {
-	
-}
+.p9 span {}
 
-.p8 span {
-	
-}
+.p10 span {}
 
-.p9 span {
-	
-}
+.p11 span {}
 
-.p10 span {
-	
-}
+.p12 span {}
 
-.p11 span {
-	
-}
+.p13 span {}
 
-.p12 span {
-	
-}
+.p13 span {}
 
-.p13 span {
-	
-}
+.p14 span {}
 
-.p13 span {
-	
-}
+.p15 span {}
 
-.p14 span {
-	
-}
+.p16 span {}
 
-.p15 span {
-	
-}
+.p17 span {}
 
-.p16 span {
-	
-}
+.p18 span {}
 
-.p17 span {
-	
-}
+.p19 span {}
 
-.p18 span {
-	
-}
+.p20 span {}
 
-.p19 span {
-	
-}
+.p21 span {}
 
-.p20 span {
-	
-}
+.p22 span {}
 
-.p21 span {
-	
-}
+.p23 span {}
 
-.p22 span {
-	
-}
+.p24 span {}
 
-.p23 span {
-	
-}
+.p25 span {}
 
-.p24 span {
-	
-}
+.p26 span {}
 
-.p25 span {
-	
-}
+.p27 span {}
 
-.p26 span {
-	
-}
+.p28 span {}
 
-.p27 span {
-	
-}
+.p29 span {}
 
-.p28 span {
-	
-}
+.p30 span {}
 
-.p29 span {
-	
-}
+.p31 span {}
 
-.p30 span {
-	
-}
+.p32 span {}
 
-.p31 span {
-	
-}
+.p33 span {}
 
-.p32 span {
-	
-}
+.p34 span {}
 
-.p33 span {
-	
-}
+.p35 span {}
 
-.p34 span {
-	
-}
+.p36 span {}
 
-.p35 span {
-	
-}
+.p37 span {}
 
-.p36 span {
-	
-}
+.p38 span {}
 
-.p37 span {
-	
-}
+.p39 span {}
 
-.p38 span {
-	
-}
+.p40 span {}
 
-.p39 span {
-	
-}
+.p41 span {}
 
-.p40 span {
-	
-}
+.p42 span {}
 
-.p41 span {
-	
-}
+.p43 span {}
 
-.p42 span {
-	
-}
-
-.p43 span {
-	
-}
 /* **********************************************
 Sounds.
 	You can style the whole body, or you can 
@@ -257,62 +181,69 @@ Sounds.
 *********************************************  */
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
+.sound1 {}
+
+.sound2 {
 	
 }
 
-.sound2 {
-	background-color:pink;
-}
 iframe {
 	transition: 1s;
 }
+
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
 
 .sound1 iframe {
-	animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+	animation: shake 1s cubic-bezier(.36, .07, .19, .97) both;
 	transform: translate3d(0, 0, 0);
 	backface-visibility: hidden;
 	perspective: 1000px;
-  }
-  
-  @keyframes shake {
-	10%, 90% {
-	  transform: translate3d(-5px, 0, 0);
-	}
-	
-	20%, 80% {
-	  transform: translate3d(2px, 0, 0);
-	}
-  
-	30%, 50%, 70% {
-	  transform: translate3d(-5px, 0, 0);
-	}
-  
-	40%, 60% {
-	  transform: translate3d(4px, 0, 0);
-	}
-  }
+}
 
-  .sound3 iframe {
+@keyframes shake {
+
+	10%,
+	90% {
+		transform: translate3d(-50px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-50px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
+.sound3 iframe {
 	box-shadow: 0 0 0 0 rgb(207, 16, 16);
 	transform: scale(1);
 	animation: pulse 2s;
-  }
+}
 
- .sound5 iframe{
+.sound5 iframe {
 	box-shadow: 0 0 0 0 rgb(207, 16, 16);
 	transform: scale(1);
 	animation: pulse2 2s;
-  }
+}
 
-  .sound7 iframe{
+.sound7 iframe {
 	box-shadow: 0 0 0 0 rgb(207, 16, 16);
 	transform: scale(1);
 	animation: pulse3 2s;
-  }
+	
+}
 
-  @keyframes pulse {
+@keyframes pulse {
 	0% {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 rgb(207, 16, 16);
@@ -362,6 +293,3 @@ iframe {
 		box-shadow: 0 0 0 0 rgb(207, 16, 16);
 	}
 }
-
-
-  
