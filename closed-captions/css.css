@@ -26,7 +26,9 @@ body p {
 	justify-content: center;
 }
 
-#soundText{
+#soundText,
+#soundTextTwee,
+#soundTextDrie {
 	display: flex;
 	justify-content: center;
 	opacity: 0;
@@ -35,23 +37,6 @@ body p {
 	color: red;
 }
 
-#soundTextTwee{
-	display: flex;
-	justify-content: center;
-	opacity: 0;
-	margin-top: 0px;
-	font-size: 2em;
-	color: red;
-}
-
-#soundTextDrie{
-	display: flex;
-	justify-content: center;
-	opacity: 0;
-	margin-top: 0px;
-	font-size: 2em;
-	color: red;
-}
 
 .audioText {
 	color: red;
@@ -81,19 +66,23 @@ Feel free to adjust the defaults to your needs.
 
 
 .voice1 {
-	font-style: italic;
+	
+	font-family: "Brenner italic";
 	font-size: 1.8em;
 }
 
 .voice2 {
-	font-family: brenner;
-	font-size: 1.8em;
+	font-family: "Brenner light";
+	font-size: 1.4em;
 
 }
 
 .voice3 {
+	font-family: "Brenner Bold";
 	justify-content: center;
+	font-size: 1.6em;
 }
+
 
 #
 
@@ -116,7 +105,7 @@ You probably want to change the styling.
 
 .p1 span:first-of-type {
 	color: green;
-	font-weight: 1000;
+	font-weight: 700;
 }
 
 .p1.on span:nth-of-type(1) {}
@@ -127,7 +116,15 @@ You probably want to change the styling.
 
 .p5 span {}
 
-.p6 span {}
+.p6.on span:nth-of-type(1) {
+	color: red;
+	font-weight: 400;
+}
+
+.p6.on span:nth-of-type(2) {
+	color: red;
+	font-weight: 400;
+}
 
 .p7 span {}
 
@@ -199,11 +196,17 @@ You probably want to change the styling.
 
 .p40 span {}
 
-.p41 span {}
+.p41 span {
+	font-size: 1.5em;
+}
 
-.p42 span {}
+.p42 span {
+	font-size: 1.3em;
+}
 
-.p43 span {}
+.p43 span {
+	font-size: 1em;
+}
 
 /* **********************************************
 Sounds.
@@ -223,65 +226,111 @@ Sounds.
 	animation: arrowInOut 2s linear forwards;
 
 	color: red;
- }
- 
- @-webkit-keyframes arrowInOut {
-	0%,100% {opacity: 0;}
-	50% {opacity: 1;}
- }
- @keyframes arrowInOut {
-	0%,100% {opacity: 0;}
-	50% {opacity: 1;}
- }
+}
 
- .sound3 #soundTextTwee {
+@-webkit-keyframes arrowInOut {
+
+	0%,
+	100% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+@keyframes arrowInOut {
+
+	0%,
+	100% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+.sound3 #soundTextTwee {
 	color: red;
-    -webkit-animation: fadeinout 1s linear forwards;
-    animation: fadeinout 3s linear forwards;
-    opacity: 0;
- }
+	-webkit-animation: fadeinout 1s linear forwards;
+	animation: fadeinout 3s linear forwards;
+	opacity: 0;
+}
 
- @-webkit-keyframes fadeinout {
-	50% { opacity: 1; }
-  }
-  
-  @keyframes fadeinout {
-	50% { opacity: 1; }
-  }
+@-webkit-keyframes fadeinout {
+	50% {
+		opacity: 1;
+	}
+}
 
- .sound5 #soundTextTwee {
+@keyframes fadeinout {
+	50% {
+		opacity: 1;
+	}
+}
+
+.sound5 #soundTextTwee {
 	color: red;
-    -webkit-animation: fadeinout 1s linear forwards;
-    animation: fadeinoutTwee 3s linear forwards;
-    opacity: 0;
- }
+	-webkit-animation: fadeinout 1s linear forwards;
+	animation: fadeinoutTwee 3s linear forwards;
+	opacity: 0;
+}
 
- @-webkit-keyframes fadeinoutTwee {
-	50% { opacity: 1; }
-  }
-  
-  @keyframes fadeinoutTwee {
-	50% { opacity: 1; }
-  }
+@-webkit-keyframes fadeinoutTwee {
+	50% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeinoutTwee {
+	50% {
+		opacity: 1;
+	}
+}
 
 
- .sound7 #soundTextTwee {
+.sound7 #soundTextTwee {
 	color: red;
-    -webkit-animation: fadeinout 1s linear forwards;
-    animation: fadeinoutDrie 3s linear forwards;
-    opacity: 0;
- }
+	-webkit-animation: fadeinout 1s linear forwards;
+	animation: fadeinoutDrie 3s linear forwards;
+	opacity: 0;
+}
 
-  @-webkit-keyframes fadeinoutDrie {
-	50% { opacity: 1; }
-  }
-  
-  @keyframes fadeinoutDrie {
-	50% { opacity: 1; }
-  }
+@-webkit-keyframes fadeinoutDrie {
+	50% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeinoutDrie {
+	50% {
+		opacity: 1;
+	}
+}
 
 iframe {
 	transition: 1s;
+}
+
+.sound8 #soundTextDrie {
+	opacity: 1;
+	transition: opacity 5s ease-in;
+	margin-top: -3em;
+	font-size: 1.3em;
+	color: grey;
+}
+
+
+/* .sound10 #soundTextDrie {
+	opacity: 0;
+	transition: opacity 2s ease-out;
+} */
+
+.p43 #soundTextDrie {
+	opacity: 0;
+	transition: opacity 2s ease-out;
 }
 
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
@@ -389,6 +438,12 @@ iframe {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 rgb(207, 16, 16);
 	}
+}
+
+.sound8 {
+	transition: background-color 2s ease;
+	background-color: black;
+	
 }
 
 /* Bronnen 
