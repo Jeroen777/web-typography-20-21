@@ -3,7 +3,6 @@ body {
 }
 
 body p {
-	margin: auto;
 	padding: auto;
 	display: block;
 	color: white;
@@ -25,6 +24,37 @@ body p {
 	margin-top: 2em;
 	display: flex;
 	justify-content: center;
+}
+
+#soundText{
+	display: flex;
+	justify-content: center;
+	opacity: 0;
+	margin-top: 35px;
+	font-size: 2em;
+	color: red;
+}
+
+#soundTextTwee{
+	display: flex;
+	justify-content: center;
+	opacity: 0;
+	margin-top: 0px;
+	font-size: 2em;
+	color: red;
+}
+
+#soundTextDrie{
+	display: flex;
+	justify-content: center;
+	opacity: 0;
+	margin-top: 0px;
+	font-size: 2em;
+	color: red;
+}
+
+.audioText {
+	color: red;
 }
 
 /* **********************************************
@@ -49,6 +79,7 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 
+
 .voice1 {
 	font-style: italic;
 	font-size: 1.8em;
@@ -61,7 +92,7 @@ Feel free to adjust the defaults to your needs.
 }
 
 .voice3 {
-	justify-content: ;
+	justify-content: center;
 }
 
 #
@@ -85,6 +116,7 @@ You probably want to change the styling.
 
 .p1 span:first-of-type {
 	color: green;
+	font-weight: 1000;
 }
 
 .p1.on span:nth-of-type(1) {}
@@ -181,11 +213,72 @@ Sounds.
 *********************************************  */
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {}
+.sound1 #soundText {
+	width: 100%;
+	padding-top: 2em;
+	height: 20px;
+	opacity: 0;
+	animation-delay: 0.1s;
+	-webkit-animation: arrowInOut 1s linear forwards;
+	animation: arrowInOut 2s linear forwards;
 
-.sound2 {
-	
-}
+	color: red;
+ }
+ 
+ @-webkit-keyframes arrowInOut {
+	0%,100% {opacity: 0;}
+	50% {opacity: 1;}
+ }
+ @keyframes arrowInOut {
+	0%,100% {opacity: 0;}
+	50% {opacity: 1;}
+ }
+
+ .sound3 #soundTextTwee {
+	color: red;
+    -webkit-animation: fadeinout 1s linear forwards;
+    animation: fadeinout 3s linear forwards;
+    opacity: 0;
+ }
+
+ @-webkit-keyframes fadeinout {
+	50% { opacity: 1; }
+  }
+  
+  @keyframes fadeinout {
+	50% { opacity: 1; }
+  }
+
+ .sound5 #soundTextTwee {
+	color: red;
+    -webkit-animation: fadeinout 1s linear forwards;
+    animation: fadeinoutTwee 3s linear forwards;
+    opacity: 0;
+ }
+
+ @-webkit-keyframes fadeinoutTwee {
+	50% { opacity: 1; }
+  }
+  
+  @keyframes fadeinoutTwee {
+	50% { opacity: 1; }
+  }
+
+
+ .sound7 #soundTextTwee {
+	color: red;
+    -webkit-animation: fadeinout 1s linear forwards;
+    animation: fadeinoutDrie 3s linear forwards;
+    opacity: 0;
+ }
+
+  @-webkit-keyframes fadeinoutDrie {
+	50% { opacity: 1; }
+  }
+  
+  @keyframes fadeinoutDrie {
+	50% { opacity: 1; }
+  }
 
 iframe {
 	transition: 1s;
@@ -194,6 +287,8 @@ iframe {
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
 
 .sound1 iframe {
+	content: "(alarm sound)";
+
 	animation: shake 1s cubic-bezier(.36, .07, .19, .97) both;
 	transform: translate3d(0, 0, 0);
 	backface-visibility: hidden;
@@ -224,6 +319,8 @@ iframe {
 	}
 }
 
+.sound2 {}
+
 .sound3 iframe {
 	box-shadow: 0 0 0 0 rgb(207, 16, 16);
 	transform: scale(1);
@@ -240,7 +337,7 @@ iframe {
 	box-shadow: 0 0 0 0 rgb(207, 16, 16);
 	transform: scale(1);
 	animation: pulse3 2s;
-	
+
 }
 
 @keyframes pulse {
@@ -293,3 +390,7 @@ iframe {
 		box-shadow: 0 0 0 0 rgb(207, 16, 16);
 	}
 }
+
+/* Bronnen 
+https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out
+https://stackoverflow.com/questions/49949881/css-keyframes-fade-in-hold-and-fade-out/49950068 */
