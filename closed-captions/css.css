@@ -67,20 +67,31 @@ Feel free to adjust the defaults to your needs.
 
 .voice1 {
 	
-	font-family: "Brenner italic";
-	font-size: 1.8em;
+	font-family: "Brenner regular";
+	font-size: 1.6em;
 }
+
+.voice1:before {
+	content:"[Interviewer]  ";
+	font-family: "Brenner regular";
+	font-size: 0.9em;
+  }
 
 .voice2 {
-	font-family: "Brenner light";
-	font-size: 1.4em;
-
+	font-family: "Brenner regular italic";
+	font-size: 1.6em;
 }
+
+.voice2:before {
+	content:"[KD6]  ";
+	font-family: "Brenner regular";
+	font-size: 0.9em;
+  }
 
 .voice3 {
 	font-family: "Brenner Bold";
 	justify-content: center;
-	font-size: 1.6em;
+	font-size: 0.7em;
 }
 
 
@@ -100,13 +111,13 @@ You probably want to change the styling.
 }
 
 .p1.on span {
-	font-size: 2em;
+	font-size: 1em;
 }
 
-.p1 span:first-of-type {
-	color: green;
-	font-weight: 700;
-}
+/* .p1 span:first-of-type {
+	color: white;
+	font-weight: 200;
+} */
 
 .p1.on span:nth-of-type(1) {}
 
@@ -117,13 +128,11 @@ You probably want to change the styling.
 .p5 span {}
 
 .p6.on span:nth-of-type(1) {
-	color: red;
-	font-weight: 400;
+	font-size: 1em;
 }
 
 .p6.on span:nth-of-type(2) {
-	color: red;
-	font-weight: 400;
+	font-size: 1em;
 }
 
 .p7 span {}
@@ -317,10 +326,13 @@ iframe {
 .sound8 #soundTextDrie {
 	opacity: 1;
 	transition: opacity 5s ease-in;
+	transition: opacity 20s ease-out;
 	margin-top: -3em;
 	font-size: 1.3em;
 	color: grey;
 }
+
+
 
 
 /* .sound10 #soundTextDrie {
@@ -446,6 +458,20 @@ iframe {
 	
 }
 
+.sound9 iframe{
+	-webkit-animation: blur 50s ease-in-out;
+}
+
+@-webkit-keyframes blur {
+	0%, 100%  { -webkit-filter: blur(0px); }
+	50% { -webkit-filter: blur(10px); }
+  }
+
+  .sound10 {
+	transition: background-color 2s ease;
+	background-color: #202020;
+  }
+  
 /* Bronnen 
 https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out
 https://stackoverflow.com/questions/49949881/css-keyframes-fade-in-hold-and-fade-out/49950068 */
