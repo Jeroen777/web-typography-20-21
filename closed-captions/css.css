@@ -66,34 +66,41 @@ Feel free to adjust the defaults to your needs.
 
 
 .voice1 {
-	
+
 	font-family: "Brenner regular";
 	font-size: 1.6em;
 }
 
 .voice1:before {
-	content:"[Interviewer]  ";
+	content: "[Interrogator]  ";
 	font-family: "Brenner regular";
 	font-size: 0.9em;
-  }
+}
 
 .voice2 {
-	font-family: "Brenner regular italic";
+	font-family: "Brenner light";
 	font-size: 1.6em;
 }
 
 .voice2:before {
-	content:"[KD6]  ";
+	content: "[KD6]  ";
 	font-family: "Brenner regular";
 	font-size: 0.9em;
-  }
+}
 
 .voice3 {
 	font-family: "Brenner Bold";
 	justify-content: center;
 	font-size: 0.7em;
+	tran;
 }
 
+.voice3:before {
+	content: "[bypasser] ";
+	font-family: "Brenner regular";
+	justify-content: center;
+
+}
 
 #
 
@@ -217,6 +224,33 @@ You probably want to change the styling.
 	font-size: 1em;
 }
 
+.p44 span {
+	font-family: 1em;
+}
+
+.p44:before {
+	content: "[Interrogator]  ";
+}
+
+.p45 span{
+	font-size: 1.2em;
+	font-family: "brenner italic";
+	
+}
+
+.p45:before {
+	content: "[Interrogator]  ";
+}
+
+.p46 span {
+	color: green;
+	font-size: 1.2em;
+}
+
+.p46:before {
+	content: "[Interrogator]  ";
+}
+
 /* **********************************************
 Sounds.
 	You can style the whole body, or you can 
@@ -330,6 +364,8 @@ iframe {
 	margin-top: -3em;
 	font-size: 1.3em;
 	color: grey;
+	animation: shake-animation 3s ease infinite;
+	transform-origin: 70% 70%;
 }
 
 
@@ -455,23 +491,71 @@ iframe {
 .sound8 {
 	transition: background-color 2s ease;
 	background-color: black;
-	
+
 }
 
-.sound9 iframe{
+.sound9 iframe {
 	-webkit-animation: blur 50s ease-in-out;
+
 }
 
 @-webkit-keyframes blur {
-	0%, 100%  { -webkit-filter: blur(0px); }
-	50% { -webkit-filter: blur(10px); }
-  }
 
-  .sound10 {
+	0%,
+	100% {
+		-webkit-filter: blur(0px);
+	}
+
+	50% {
+		-webkit-filter: blur(10px);
+	}
+}
+
+.sound10 {
 	transition: background-color 2s ease;
 	background-color: #202020;
-  }
-  
+}
+
+.sound10 #soundTextDrie {
+	opacity: 0;
+	transition: ease-out;
+
+}
+
+@keyframes shake-animation {
+	0% {
+		transform: translate(0, 0)
+	}
+
+	1.78571% {
+		transform: translate(5px, 0)
+	}
+
+	3.57143% {
+		transform: translate(0, 0)
+	}
+
+	5.35714% {
+		transform: translate(5px, 0)
+	}
+
+	7.14286% {
+		transform: translate(0, 0)
+	}
+
+	8.92857% {
+		transform: translate(5px, 0)
+	}
+
+	10.71429% {
+		transform: translate(0, 0)
+	}
+
+	100% {
+		transform: translate(0, 0)
+	}
+}
+
 /* Bronnen 
 https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out
 https://stackoverflow.com/questions/49949881/css-keyframes-fade-in-hold-and-fade-out/49950068 */
