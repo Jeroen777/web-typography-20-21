@@ -34,7 +34,8 @@ body p {
 
 #soundText,
 #soundTextTwee,
-#soundTextDrie {
+#soundTextDrie,
+#soundTextVier {
 	display: flex;
 	justify-content: center;
 	opacity: 0;
@@ -257,27 +258,285 @@ You probably want to change the styling.
 	content: "[Interrogator]  ";
 }
 
-.p51 {}
+.p50{
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+.p50:before {
+	
+	content: "[Interrogator]  ";
+}
 
-.p51 {}
+.p51 {
+	font-family: "Brenner light";
+	font-size: 1.6em;
+}
 
-.p51 {}
+.p51:before {
+	content: "[KD6]  ";
+}
 
-.p51 {}
+.p52 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
 
-.p51 {}
+.p52:before {
+	content: "[Interrogator]  ";
+}
 
-.p51 {}
+.p53 {
+	font-family: "Brenner light";
+	font-size: 1.6em;
+}
 
-.p51 {}
+.p53:before {
+	content: "[KD6]  ";
+}
 
-.p51 {}
 
-.p51 {}
+.p54 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
 
-.p51 {}
+.p54:before {
+	content: "[Interrogator]  ";
+}
 
-.p51 {}
+.p55 {
+	font-family: "Brenner light";
+	font-size: 1.6em;
+}
+
+.p55:before {
+	content: "[KD6]  ";
+}
+
+.p55 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p55:before {
+	content: "[Interrogator]  ";
+}
+
+.p56 {
+	font-family: "Brenner light";
+	font-size: 1.6em;
+}
+
+.p56:before {
+	content: "[KD6]  ";
+}
+
+.p57 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p57:before {
+	content: "[Interrogator]  ";
+}
+
+.p58 {
+	font-family: "Brenner light";
+	font-size: 1.6em;
+}
+
+.p58:before {
+	content: "[KD6]  ";
+}
+
+.p59 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p59:before {
+	content: "[Interrogator]  ";
+}
+
+.p60 {
+	font-family: "Brenner light";
+	font-size: 1.6em;
+}
+
+.p60:before {
+	content: "[KD6]  ";
+}
+
+.p61 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p61:before {
+	content: "[Interrogator]  ";
+}
+
+.p62 {
+	font-family: "Brenner light";
+	font-size: 1.6em;
+}
+
+.p62:before {
+	content: "[KD6]  ";
+}
+
+.p63 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p63:before {
+	content: "[Interrogator]  ";
+}
+
+.p64 {
+	font-family: "Brenner light";
+	font-size: 1.6em
+}
+
+.p64:before {
+	content: "[KD6]  ";
+}
+
+.p65 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p65:before {
+	content: "[Interrogator]  ";
+}
+
+.p66 {
+	font-family: "Brenner light";
+	font-size: 1.6em
+}
+
+.p66:before {
+	content: "[KD6]  ";
+}
+
+.p67 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p67:before {
+	content: "[Interrogator]  ";
+}
+
+.p68 {
+	font-family: "Brenner light";
+	font-size: 1.6em
+}
+
+.p68:before {
+	content: "[KD6]  ";
+}
+
+.p69 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p69:before {
+	content: "[Interrogator]  ";
+}
+
+.p70 {
+	font-family: "Brenner light";
+	font-size: 1.6em
+}
+
+.p70:before {
+	content: "[KD6]  ";
+}
+
+.p71 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p71:before {
+	content: "[Interrogator]  ";
+}
+
+.p72 {
+	font-family: "Brenner light";
+	font-size: 1.6em
+}
+
+.p72:before {
+	content: "[KD6]  ";
+}
+
+.p73 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p73:before {
+	content: "[Interrogator]  ";
+}
+
+.p74 {
+	font-family: "Brenner light";
+	font-size: 1.6em
+}
+
+.p74:before {
+	content: "[KD6]  ";
+}
+
+.p75 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p75:before {
+	content: "[Interrogator]  ";
+}
+
+.p76 {
+	font-family: "Brenner light";
+	font-size: 1.6em
+}
+
+.p76:before {
+	content: "[KD6]  ";
+}
+
+.p77 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p77:before {
+	content: "[Interrogator]  ";
+}
+
+.p78 {
+	font-family: "Brenner light";
+	font-size: 1.6em
+}
+
+.p78:before {
+	content: "[KD6]  ";
+}
+
+.p79 {
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+
+.p79:before {
+	content: "[Interrogator]  ";
+}
 
 /* **********************************************
 Sounds.
@@ -395,8 +654,6 @@ iframe {
 	animation: shake-animation 3s ease infinite;
 	transform-origin: 70% 70%;
 }
-
-
 
 
 /* .sound10 #soundTextDrie {
@@ -588,7 +845,7 @@ iframe {
 
 
 .sound10 iframe {
-	-webkit-animation: blur 15s ease-in-out;
+	/* -webkit-animation: blur 15s ease-in-out; */
 }
 
 @-webkit-keyframes blur {
@@ -648,7 +905,51 @@ iframe {
 	}
 }
 
-.sound12{}
+.sound12{
+	background: linear-gradient(-45deg, #ffffff, #888888, #202020, #202020);
+    background-size: 400% 400%;
+    animation: gradientVier 2s ease-in-out;
+}
+
+.sound12 #soundTextVier {
+	opacity: 1;
+	transition: ease-in;
+}
+
+@keyframes gradientVier {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.sound12 iframe {
+	box-shadow: 0 0 0 0 rgb(207, 16, 16);
+	transform: scale(1);
+	animation: pulseVier 2s;
+}
+
+@keyframes pulseVier {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgb(207, 16, 16);
+	}
+
+	70% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgb(207, 16, 1);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgb(207, 16, 16);
+	}
+}
 
 .sound13{}
 
