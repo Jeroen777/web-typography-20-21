@@ -35,7 +35,8 @@ body p {
 #soundText,
 #soundTextTwee,
 #soundTextDrie,
-#soundTextVier {
+#soundTextVier,
+#soundTextVijf {
 	display: flex;
 	justify-content: center;
 	opacity: 0;
@@ -256,6 +257,24 @@ You probably want to change the styling.
 
 .p46:before {
 	content: "[Interrogator]  ";
+}
+
+.p48{
+	font-family: "Brenner regular";
+	font-size: 1.6em;
+}
+.p48:before {
+	
+	content: "[Interrogator]  ";
+}
+
+.p49 {
+	font-family: "Brenner light";
+	font-size: 1.6em;
+}
+
+.p49:before {
+	content: "[KD6]  ";
 }
 
 .p50{
@@ -656,6 +675,12 @@ iframe {
 }
 
 
+.sound9 {
+	background: green;
+}
+
+
+
 /* .sound10 #soundTextDrie {
 	opacity: 0;
 	transition: opacity 2s ease-out;
@@ -681,7 +706,7 @@ iframe {
 
 	10%,
 	90% {
-		transform: translate3d(-50px, 0, 0);
+		transform: translate3d(-100px, 0, 0);
 	}
 
 	20%,
@@ -692,7 +717,7 @@ iframe {
 	30%,
 	50%,
 	70% {
-		transform: translate3d(-50px, 0, 0);
+		transform: translate3d(-100px, 0, 0);
 	}
 
 	40%,
@@ -786,22 +811,22 @@ iframe {
     }
 }
 
-@keyframes pulse {
+/* @keyframes pulse {
 	0% {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 rgb(207, 16, 16);
 	}
 
 	70% {
-		transform: scale(0.9);
+		transform: scale(0);
 		box-shadow: 0 0 0 0 rgb(207, 16, 1);
 	}
 
 	100% {
-		transform: scale(1);
+		transform: scale(2);
 		box-shadow: 0 0 0 0 rgb(207, 16, 16);
 	}
-}
+} */
 
 @keyframes pulse2 {
 	0% {
@@ -838,14 +863,30 @@ iframe {
 }
 
 .sound8 {
-	transition: background-color 2s ease;
-	background-color: black;
+	transition: ease-in 1s;
+	background: #202020;
+}
 
+.sound9 {
+	background: black;
 }
 
 
+
+
 .sound10 iframe {
-	/* -webkit-animation: blur 15s ease-in-out; */
+	-webkit-animation: blur 15s ease-in-out;
+}
+
+.sound10 {
+	transition: ease-in 2s;
+	animation: color-change 11s ease-in-out;
+}
+
+@keyframes color-change {
+    0% { background-color: rgb(3, 3, 3); }
+    50% { background-color: rgb(59, 140, 143); }
+    100% { background-color: rgb(1, 238, 255); }
 }
 
 @-webkit-keyframes blur {
@@ -908,12 +949,14 @@ iframe {
 .sound12{
 	background: linear-gradient(-45deg, #ffffff, #888888, #202020, #202020);
     background-size: 400% 400%;
-    animation: gradientVier 2s ease-in-out;
+	animation: gradientVier 2s ease-in-out;
+	
 }
 
 .sound12 #soundTextVier {
 	opacity: 1;
 	transition: ease-in;
+	
 }
 
 @keyframes gradientVier {
@@ -932,6 +975,8 @@ iframe {
 	box-shadow: 0 0 0 0 rgb(207, 16, 16);
 	transform: scale(1);
 	animation: pulseVier 2s;
+	transition: ease-out;
+	
 }
 
 @keyframes pulseVier {
@@ -951,9 +996,76 @@ iframe {
 	}
 }
 
-.sound13{}
+.sound13{
+	
+	background: linear-gradient(-45deg, rgb(0, 0, 0), #0d0852, #0a0c8f, #490b99);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	transition: ease-in 1s;
+}
 
-.sound14{}
+@keyframes gradientEnd {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.sound16 iframe{
+	animation: shakeEnd 1s cubic-bezier(.36, .07, .19, .97) both;
+	transform: translate3d(0, 0, 0);
+}
+
+.sound16 #soundTextVijf {
+	opacity: 1;
+	margin-top: -6em;
+	transition: ease-out 1s;
+}
+
+.sound17 #soundTextVijf {
+	opacity: 0;
+	transition: ease-out 1s;
+}
+
+@keyframes shakeEnd {
+
+	10%,
+	90% {
+		transform: translate3d(-20px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(20px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-20px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(20px, 0, 0);
+	}
+}
+
+.sound19 #soundTextVier {
+	transition: ease-out 1s;
+	opacity: 0;
+}
+
+.sound20 {
+	transition: ease-in 1s;
+	background: linear-gradient(-45deg, #202020, #202020, #202020, #202020,);
+}
 
 /* Bronnen 
 https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out
