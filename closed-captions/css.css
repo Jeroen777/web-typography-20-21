@@ -46,8 +46,14 @@ body p {
 }
 
 
+
 .audioText {
-	color: #FF7F50;
+	color: yellow;
+}
+
+#soundTextTwee .audioText {
+	color: white;
+	font-size: 1.3em;
 }
 
 /* **********************************************
@@ -900,9 +906,9 @@ iframe {
 	-webkit-animation: blur 15s ease-in-out;
 }
 
-.sound10 {
-	transition: ease-in 2s;
-	animation: color-change 11s ease-in-out;
+.sound8 {
+	transition: ease-in 50s;
+	animation: color-change 45s ease-in-out;
 }
 
 @keyframes color-change {
@@ -911,12 +917,21 @@ iframe {
 	}
 
 	50% {
-		background-color: rgb(219, 200, 27);
+		background-color: rgb(48, 32, 8);
+	}
+
+	95% {
+		background-color: rgb(255, 174, 0);
+	}
+
+	97% {
+		background-color: rgb(48, 32, 8);
 	}
 
 	100% {
-		background-color: rgb(230, 255, 2);
+		background-color: #202020;
 	}
+
 }
 
 @-webkit-keyframes blur {
@@ -1008,7 +1023,7 @@ iframe {
 	box-shadow: 0 0 0 0 rgb(207, 16, 16);
 	transform: scale(1);
 	animation: pulseVier 2s;
-	transition: ease-out;
+	transition: ease-out 2s;
 
 }
 
@@ -1031,10 +1046,11 @@ iframe {
 
 .sound13 {
 
-	background: linear-gradient(-45deg, rgb(0, 0, 0), #6e00ad, #3638bb, #490b99);
+	background: linear-gradient(-45deg,#9d00f8 ,#2802ff, #202020, #202020);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	transition: ease-in 1s;
+	animation-timing-function: linear;
 }
 
 @keyframes gradientEnd {
