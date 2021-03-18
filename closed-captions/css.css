@@ -56,6 +56,10 @@ body p {
 	font-size: 1.3em;
 }
 
+#soundTextDrie .audioText {
+	color: white;
+}
+
 /* **********************************************
 Basic mechanics
 Hide all paragraphs by default
@@ -822,7 +826,8 @@ iframe {
 .sound7 {
 	background: linear-gradient(-45deg, #992766, #ff0000, #202020, #202020);
 	background-size: 400% 400%;
-	animation: gradientDrie 2s ease-in-out;
+	animation: gradientDrie 3s;
+	
 }
 
 @keyframes gradientDrie {
@@ -891,7 +896,7 @@ iframe {
 }
 
 .sound8 {
-	transition: ease-in 1s;
+	transition: ease-in 2s;
 	background: #202020;
 }
 
@@ -909,10 +914,15 @@ iframe {
 .sound8 {
 	transition: ease-in 50s;
 	animation: color-change 45s ease-in-out;
+	animation-delay: 2s;
 }
 
 @keyframes color-change {
 	0% {
+		background-color: white;
+	}
+
+	2% {
 		background-color: rgb(3, 3, 3);
 	}
 
