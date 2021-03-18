@@ -671,11 +671,11 @@ iframe {
 
 .sound8 #soundTextDrie {
 	opacity: 1;
-	transition: opacity 5s ease-in;
+	/* transition: opacity 5s ease-in;
 	transition: opacity 20s ease-out;
 	margin-top: -2.5em;
 	font-size: 1em;
-	color: grey;
+	color: grey; */
 	animation: pulsePitch 100s;
 }
 
@@ -1119,7 +1119,7 @@ iframe {
 }
 
 .sound19 #soundTextVier {
-	transition: ease-out 20s;
+	transition: ease-out s;
 	opacity: 0;
 }
 
