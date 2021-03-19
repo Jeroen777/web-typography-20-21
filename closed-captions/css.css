@@ -1119,7 +1119,7 @@ iframe {
 }
 
 .sound19 #soundTextVier {
-	transition: ease-out s;
+	transition: ease-out 23s;
 	opacity: 0;
 }
 
